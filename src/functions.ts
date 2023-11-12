@@ -14,13 +14,20 @@ const product: Product = (a, b) => {
 };
 
 // classic function and annotations.
-function product2(a: number, b: number): number {
+function produ(a: number, b: number): number {
   return a * b;
 }
 // classic function with type annotation
-function product3(): Product {
+function pr3(): Product {
   return (a, b) => a * b;
 }
+function prr(fn: (a: number, b: number) => number) {
+  const result = fn(5, 6);
+  console.log(result);
+}
+// invocar:
+prr(produ);
+
 // function interface
 interface ProductType {
   (a: number, b: number): number;
