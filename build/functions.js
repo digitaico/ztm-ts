@@ -11,13 +11,19 @@ const product = (a, b) => {
     return a * b;
 };
 // classic function and annotations.
-function product2(a, b) {
+function produ(a, b) {
     return a * b;
 }
 // classic function with type annotation
-function product3() {
+function pr3() {
     return (a, b) => a * b;
 }
+function prr(fn) {
+    const result = fn(5, 6);
+    console.log(result);
+}
+// invocar:
+prr(produ);
 const prod = (a, b) => {
     return a * b;
 };
